@@ -1,0 +1,7 @@
+{
+  "name": "fr-routing",
+  "version": "0.0.1",
+  "main": "routing.js",
+  "dependencies": {
+  }
+}
