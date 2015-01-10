@@ -12,6 +12,10 @@ function configureRouter(router, builder) {
         builder.coArticle(this, site, articlePath);
     }
 
+    function coAudio(site, articlePath) {
+        builder.coAudio(this, site, articlePath);
+    }
+
     function ciImage(imagePath) {
         builder.ciImage(this, imagePath);
     }
@@ -21,6 +25,7 @@ function configureRouter(router, builder) {
     }
 
     router.get('/co/:site/article/:path', coArticle);
+    router.get('/co/:site/audio/:path', coAudio);
 
     router.get('/ci/:site/style/:path', ciStyle);
     router.get('/ci/partial/:path', ciPartial);
