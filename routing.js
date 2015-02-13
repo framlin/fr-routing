@@ -24,6 +24,15 @@ function configureRouter(router, builder) {
         builder.ciFont(this, fontPath);
     }
 
+    //function lib(libPath) {
+    //    builder.lib(this, libPath);
+    //}
+    //
+    //function behave(behavePath) {
+    //    builder.behave(this, behavePath);
+    //}
+
+
     router.get('/co/:site/article/:path', coArticle);
     router.get('/co/:site/audio/:path', coAudio);
 
@@ -35,6 +44,10 @@ function configureRouter(router, builder) {
     router.get('/disclaimer', builder.disclaimer);
     router.get('/impressum', builder.impressum);
     router.get('/about', builder.about);
+
+    //router.get('/lib/:path', lib);
+    //router.get('/behave/:path', behave);
+
     router.get('/', builder.home);
 
 //---- LEGACY Routes ----------------------
